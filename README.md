@@ -1,4 +1,4 @@
-# ![alt text](./static/img/logo.png) Leap Year Checker Web App
+# 📅 Leap Year Checker Web App
 
 This is a simple web application built using Flask that checks whether a given year is a leap year or not. The app receives input through an HTML form, sends the data to a Flask backend via AJAX, and displays the result dynamically on the web page.
 

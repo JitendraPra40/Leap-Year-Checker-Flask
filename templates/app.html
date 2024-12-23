@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Dice Game</title>
+    <link rel="icon" href="../static/img/logo.png" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../static/css/app.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <!-- Link to JavaScript -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</head>
+
+<body class="vh-100 d-flex justify-content-center align-items-center bg-light">
+
+    <div class="game-container container img-fluid d-flex flex-column align-items-center bg-white shadow rounded ">
+
+        <!-- Title -->
+        <div class="fluid-container  w-100 mb-4">
+            <div class="row mb-2">
+                <div class="col-12 text-center">
+                    <h1 class="leap_h">Leap Year Checker</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Turns Input Section -->
+        <div class="container w-100 mb-4">
+            <div class="row mb-2">
+                <div class="col-12 text-center">
+                    <h2>Enter the Year</h2>
+                    <input type="number" id="year" value="2024" min="1" class="form-control w-50 mx-auto text-center">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Total Scores Section -->
+        <div class="container w-60 ">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2>Leap Year ?</h2>
+                    <h2 class="year" id="leap_print">wait...</h2>
+                </div>
+
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+
+                    <button class="button" onclick="check()">Check</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Links Section -->
+
+
+        <footer class="text-center" id="links">
+            <a href="https://github.com/JitendraPra40" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/jitendra-prajapati-14724b250/" target="_blank">Linkedin</a>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+    
+
+</body>
+
+</html>
